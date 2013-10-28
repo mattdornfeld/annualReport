@@ -1,0 +1,118 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+Animal communication is a complex and varied process.
+ There are myriad different communication patterns underpinned by many different
+ physical mechanisms.
+ Of these patterns, vocalizations are of particular note because they are
+ the primary device by which humans exchange information with one other.
+ Throughout mammals, the average fundamental frequency 
+\begin_inset Formula $f$
+\end_inset
+
+ of a given species vocalization and its average mass 
+\begin_inset Formula $M$
+\end_inset
+
+ are known to obey a scaling law of the form 
+\begin_inset Formula $f\propto M^{-0.4}$
+\end_inset
+
+.
+ Vocalizations of this type are in the sonic range and are all a result
+ of oscillations of the vocal fold tissue in the larynges of the animals.
+ Certain types of rodent vocalizations are notable in two respects: first,
+ they lie in the ultrasonic frequency range of 20-80 kHz and, second, they
+ completely shatter the above scaling law.
+ These observations and other experimental studies have led to the conjecture
+ that rodent ultrasonic vocalizations are the result of a whistle mechanism
+ as opposed to vibrating vocal folds.
+ Over the past year, I continued my investigation of rat ultrasonic vocal
+ production using mathematical, numerical, and experimental techniques with
+ the intent of developing a full mathematical theory of this whistle mechanism.
+\end_layout
+
+\begin_layout Standard
+One of the more salient properties of the ultrasonic calls are points at
+ which the frequency discontinuously jumps up or down.
+ I have spent a significant amount of time investigating these jumps as
+ their mechanism is currently unknown.
+ Although, upon examination of the spectrogram, the jumps appear discontinuous,
+ I believed it was worthwhile to further investigate this observation.
+ To accomplish this the delay embedded manifolds of several calls were calculate
+d.
+ These manifolds are diffeomorphic to the trajectories in phase space taken
+ by the calls and circumvent the need to calculate numerical derivatives
+ of noisy data.
+ Is is readily apparent that the man 
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "Dropbox/Work/Paper Preperation/trp"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
