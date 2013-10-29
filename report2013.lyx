@@ -77,6 +77,13 @@ Animal communication is a complex and varied process.
 \begin_inset Formula $f\propto M^{-0.4}$
 \end_inset
 
+ (see Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "frequencyScaling"
+
+\end_inset
+
 .
  Vocalizations of this type are in the sonic range and are all a result
  of oscillations of the vocal fold tissue in the larynges of the animals.
@@ -92,18 +99,404 @@ Animal communication is a complex and varied process.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename frequnecyScaling.png
+	display false
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "frequencyScaling"
+
+\end_inset
+
+Scaling law of typical frequencies for a large range of mammals in log-log
+ scale.
+ The dotted line shows a previously proposed scaling law with exponent of
+ 0.33, while the solid line shows the full regression with exponent of 0.4.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 One of the more salient properties of the ultrasonic calls are points at
- which the frequency discontinuously jumps up or down.
+ which the frequency discontinuously jumps up or down (see Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "spectrogram"
+
+\end_inset
+
+).
  I have spent a significant amount of time investigating these jumps as
  their mechanism is currently unknown.
  Although, upon examination of the spectrogram, the jumps appear discontinuous,
  I believed it was worthwhile to further investigate this observation.
  To accomplish this the delay embedded manifolds of several calls were calculate
-d.
+d (see Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "delayManifold"
+
+\end_inset
+
+).
  These manifolds are diffeomorphic to the trajectories in phase space taken
  by the calls and circumvent the need to calculate numerical derivatives
  of noisy data.
- Is is readily apparent that the man 
+ Is is readily apparent that the manifold falls into two distinct regions
+ separated by the jump.
+ Before the jump the trajectory is an ellipse confined to a plane.
+ At the jump time, the trajectory discontinuously transfers to another ellipse
+ confined to a plane that is linearly independent of the first.
+ The immediate nature of the transition indicates that jump is indeed happening
+ discontinuously and is not the result of the gradual variation of biological
+ parameters inside the trachea.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename specgram107.png
+	display false
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "spectrogram"
+
+\end_inset
+
+(top) Spectrogram of rat call with both up and down frequency jumps (as
+ well as the output of an algorithm that fits a curve to the call in frequency
+ space and outputs the jump calls).
+ (bottom) The corresponding call in pressure space.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename delayManifold.png
+	display false
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "delayManifold"
+
+\end_inset
+
+Delay embedded manifold that represents a vocalization several milliseconds
+ before (blue) and after a jump (green).
+ The trajectories are parameterized by time.
+ The first axis is the signal, the second is the signal offset by a delay
+ constant, the third is the signal offset by two times the delay constant.
+ This manifold is diffeomorphic to the one obtained by plotting the signal
+ against its first and second derivatives, which obviates the need to numericall
+y calculate its derivatives.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The above result suggests that the rats are not continuously modulating
+ the radii of their vocal folds to achieve the frequency jumps.
+ Considering this and the geometry of the rat vocal tract, the most likely
+ correct way to model the production of the ultrasonic calls and their frequency
+ jumps is that of the hole tone whistle.
+ In the hole tone model, the rat vocal folds remain fixed or may vary in
+ a non-oscillatory manner to modulate the emitted frequency.
+ Air is then forced through the folds into a circular jet, which impinges
+ on another aperture 1-2 mm downstream.
+ If 
+\begin_inset Formula $Q(t)$
+\end_inset
+
+ is the volume flow through that aperture, the pressure in the far field
+ is 
+\begin_inset Formula $p(x,t)\propto\frac{dQ}{dt}$
+\end_inset
+
+.
+ So the frequency components of the emmited call are the same as the frequency
+ components of the volume flux through the second aperture.
+ In this model the frequency jumps can be explained by considering small
+ perturbations in the mean flow of the jet.
+ Perturbations of most frequencies will die off with time and not be observable.
+ However, perturbations of certain frequencies will grow with time and make
+ a contribution to the volume flux through the downstream aperture.
+ These frequencies will be observable in the emitted call.
+ Perturbations of different modes can have experience an exchange of stability,
+ which will manifest in a discontinuous jump in the emitted far field tone.
+ 
+\end_layout
+
+\begin_layout Standard
+Hole tone experiments have shown that the ratio of before and after jump
+ frequencies obey the relation 
+\begin_inset Formula $\frac{f_{1}}{f_{2}}=\frac{n_{1}-\theta}{n_{2}-\theta}$
+\end_inset
+
+, where 
+\begin_inset Formula $\theta=\frac{1}{4}$
+\end_inset
+
+ and 
+\begin_inset Formula $n_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $n_{2}$
+\end_inset
+
+ represent the before and after jump integer mode numbers.
+ By analyzing thousands of recorded calls in the manner shown in Figure
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "spectrogram"
+
+\end_inset
+
+, I was able to pick out many jump points and fit them to the above relation
+ to determine the parameter 
+\begin_inset Formula $\theta$
+\end_inset
+
+ by designing a simple clustering algorithm.
+ As input the algorithm accepts a list of slopes of straight lines and an
+ interval.
+ It then calculates the slopes of the lines that bisect the input lines
+ and uses the images of the endpoints of the intervals, on those lines,
+ as vertices for polygons.
+ The endpoints of the intervals on the with zero and infinite slope were
+ also used as vertices (see Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:polygonClusterAlgo"
+
+\end_inset
+
+).
+ In my particular example, the above frequency mode relation was used to
+ generate the slopes by allowing 
+\begin_inset Formula $(n_{1,}n_{2})=\{(2,3),(3,4),(4,5),(5,4),(4,3),(3,2)\}$
+\end_inset
+
+.
+ This is reasonable because it is unlikely to observe mode numbers higher
+ than five, and transitions usually occur between adjacent mode numbers.
+ For each jump the after jump frequency was then plotted against the before
+ jump frequency.
+ The variable 
+\begin_inset Formula $\theta$
+\end_inset
+
+ was then allowed to vary between 
+\begin_inset Formula $0$
+\end_inset
+
+ and 
+\begin_inset Formula $1$
+\end_inset
+
+ in increments of 
+\begin_inset Formula $0.01$
+\end_inset
+
+.
+ Each jump then lies in exactly one polygon and was assigned to a mode cluster
+ based on that.
+ For each value of theta, the sum of all the least squared errors was calculated
+ for all the jumps.
+ A minimum of this value was found at 
+\begin_inset Formula $\theta=0.38$
+\end_inset
+
+.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:polygonClusterData"
+
+\end_inset
+
+ shows the data plotted and clustered for this value.
+ The data seems to correspond relatively well to what would be expected
+ from the hole tone model.
+ However, the discrepancy of the value 
+\begin_inset Formula $\theta$
+\end_inset
+
+ obtained from the rat data and the one obtained from hole tone experiments
+ is notable.
+ Currently, I am not sure of the source of this discrepancy.
+ It could be a result of the absorbent nature of the tissue of the rat trachea
+ or possibly misalignment of the jet with the downstream aperture.
+ This would need to an avenue for future investigation.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename polygonClusteringAlgo.png
+	display false
+	scale 20
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:polygonClusterAlgo"
+
+\end_inset
+
+Illustration of the polygon clustering algorithm.
+ Seperate polygons are different colors.
+ The red dots show the vertices of the polygons.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename polygonClusterData.png
+	display false
+	scale 20
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:polygonClusterData"
+
+\end_inset
+
+Plot of the before and after jump frequencies for a single rat, color coded
+ by cluster.
+ Also shown are the lines generated by the frequency mode relation for 
+\begin_inset Formula $\theta=0.38$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "Dropbox/Work/Paper Preperation/trp"
