@@ -59,6 +59,10 @@
 
 \begin_body
 
+\begin_layout Title
+The Continued Investigation of Rat Ultrasonic Whistles
+\end_layout
+
 \begin_layout Standard
 Animal communication is a complex and varied process.
  There are myriad different communication patterns underpinned by many different
@@ -89,10 +93,24 @@ reference "frequencyScaling"
  of oscillations of the vocal fold tissue in the larynges of the animals.
  Certain types of rodent vocalizations are notable in two respects: first,
  they lie in the ultrasonic frequency range of 20-80 kHz and, second, they
- completely shatter the above scaling law.
+ completely shatter the above scaling law
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Fletcher201051"
+
+\end_inset
+
+.
  These observations and other experimental studies have led to the conjecture
  that rodent ultrasonic vocalizations are the result of a whistle mechanism
- as opposed to vibrating vocal folds.
+ as opposed to vibrating vocal folds
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Riede2011a,Riede2011b,Roberts1975a,Roberts1975b"
+
+\end_inset
+
+.
  Over the past year, I continued my investigation of rat ultrasonic vocal
  production using mathematical, numerical, and experimental techniques with
  the intent of developing a full mathematical theory of this whistle mechanism.
@@ -168,7 +186,14 @@ reference "delayManifold"
 ).
  These manifolds are diffeomorphic to the trajectories in phase space taken
  by the calls and circumvent the need to calculate numerical derivatives
- of noisy data.
+ of noisy data
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sugihara2012"
+
+\end_inset
+
+.
  Is is readily apparent that the manifold falls into two distinct regions
  separated by the jump.
  Before the jump the trajectory is an ellipse confined to a plane.
@@ -295,8 +320,15 @@ The above result suggests that the rats are not continuously modulating
 \end_inset
 
 .
- So the frequency components of the emmited call are the same as the frequency
- components of the volume flux through the second aperture.
+ So the frequency components of the emitted call are the same as the frequency
+ components of the volume flux through the second aperture
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Howe1998"
+
+\end_inset
+
+.
  In this model the frequency jumps can be explained by considering small
  perturbations in the mean flow of the jet.
  Perturbations of most frequencies will die off with time and not be observable.
@@ -305,6 +337,12 @@ The above result suggests that the rats are not continuously modulating
  These frequencies will be observable in the emitted call.
  Perturbations of different modes can have experience an exchange of stability,
  which will manifest in a discontinuous jump in the emitted far field tone.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Drazin2002Introduction"
+
+\end_inset
+
  
 \end_layout
 
@@ -326,7 +364,14 @@ Hole tone experiments have shown that the ratio of before and after jump
 \begin_inset Formula $n_{2}$
 \end_inset
 
- represent the before and after jump integer mode numbers.
+ represent the before and after jump integer mode numbers
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Howe1998"
+
+\end_inset
+
+.
  By analyzing thousands of recorded calls in the manner shown in Figure
  
 \begin_inset CommandInset ref
@@ -459,7 +504,7 @@ Illustration of the polygon clustering algorithm.
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -497,9 +542,234 @@ Plot of the before and after jump frequencies for a single rat, color coded
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename inviscidDispersion.png
+	display false
+	scale 20
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:pinviscidDispersion"
+
+\end_inset
+
+The real and imaginary parts of 
+\begin_inset Formula $c$
+\end_inset
+
+ as a function 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ and 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ The real part,
+\begin_inset Formula $c_{r}$
+\end_inset
+
+ represents the convection of a perturbation in the axial direction.
+ While 
+\begin_inset Formula $c_{i}$
+\end_inset
+
+ represents the damping factor.
+ For the inviscid case, 
+\begin_inset Formula $c_{i}>0$
+\end_inset
+
+ for all 
+\begin_inset Formula $n$
+\end_inset
+
+ and 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I have also done some work formulating a mathematical theory of how frequency
+ jumps occur in the hole tone.
+ To accomplish this I considered, in cylindrical coordinates 
+\begin_inset Formula $(x,r,\phi)$
+\end_inset
+
+, an unbounded axisymmetric jet emitting from a circular aperture of radius
+ 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ The solution to this system consists of two parts: the steady mean flow
+ solution 
+\begin_inset Formula $\vec{U}=(U(r),0,0)$
+\end_inset
+
+ and the time varying perturbation 
+\begin_inset Formula 
+\[
+\vec{u'}=\Re[(F(r),iG(r),H(r))e^{in\phi+i\alpha(x-ct)}]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{p'}{\rho}=\Re[P(r)e^{in\phi+i\alpha(x-ct)}],
+\]
+
+\end_inset
+
+where p is the pressure, 
+\begin_inset Formula $\rho$
+\end_inset
+
+ is the density, 
+\begin_inset Formula $n$
+\end_inset
+
+ is the azimuthal wave number, 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ is the axial wave number, 
+\begin_inset Formula $c$
+\end_inset
+
+ is the complex velocity of a perturbation, F, G, H, and P are control functions
+ that can be solved for to determine the form of the disturbance, and the
+ symbol 
+\begin_inset Formula $\Re$
+\end_inset
+
+ indicates the real part of the expression is being taken (as that is the
+ physically relevant part.
+ Inserting the flow (
+\begin_inset Formula $\vec{U}+\vec{u'},P_{mean}+p')$
+\end_inset
+
+ into the Navier-Stokes equation, killing of nonlinear terms, using the
+ fact that mean flow is also a solution to Navier-Stokes, and solving for
+ P(r), we get a differential equation (in nondimensionalized form) for the
+ pressure control function
+\begin_inset Formula 
+\[
+\frac{d^{2}p}{ds^{2}}+\frac{1}{s}\frac{dp}{ds}-(\frac{n^{2}}{s^{2}}+\frac{s^{2}\alpha^{3}(R_{c_{r}}-R_{U})}{s^{2}\alpha(R_{c_{r}}-R_{U})+n})p=0,
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $p=\frac{P}{P_{mean}}$
+\end_inset
+
+, 
+\begin_inset Formula $s=\frac{r}{a}$
+\end_inset
+
+, 
+\begin_inset Formula $R_{c_{r}}=\frac{c_{r}*a}{\nu}$
+\end_inset
+
+, and 
+\begin_inset Formula $R_{U}=\frac{U*a}{\nu}$
+\end_inset
+
+.
+ For the inviscid case, by letting 
+\begin_inset Formula $(R_{c_{r}}-R_{U})$
+\end_inset
+
+ go to infinity, this reduces to the Bessel equation.
+ By matching the boundary conditions at the interface of the jet and the
+ surrounding fluid, a dispersion relation that governs the complex velocity
+ as a function of wave number can be determined (see Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:pinviscidDispersion"
+
+\end_inset
+
+)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "batchelor1962,Drazin2002Introduction"
+
+\end_inset
+
+.
+ The most important property of this graph is that 
+\begin_inset Formula $c_{i}>0$
+\end_inset
+
+ for all 
+\begin_inset Formula $n$
+\end_inset
+
+ and 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+ This means that perturbations of all frequencies will blow up to infinity
+ with time.
+ If a second aperture is placed downstream, as in the hole tone, this means
+ that perturbations of all frequencies will be present in the volume flux,
+ and only white noise will be emitted in the far field.
+ Thus the hole tone frequencies jumps can not be explained using the inviscid
+ model.
+ However, the inclusion of viscosity will balance certain frequency modes.
+ I am currently in the process of obtaining the corresponding dispersion
+ relation for the viscous case.
+ I was able to solve the pressure governing equation using and approximation
+ 
+\begin_inset Formula $r\approx1$
+\end_inset
+
+.
+ However, there are certain difficulties with the boundary conditions and
+ divergences at infinity that need to be dealt with before the solution
+ is complete.
+ This will require further investigation.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "Dropbox/Work/Paper Preperation/trp"
+bibfiles "/home/matthew/Dropbox/Work/Writing/mdornfe1"
 options "plain"
 
 \end_inset
